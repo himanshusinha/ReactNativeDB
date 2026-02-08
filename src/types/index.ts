@@ -6,6 +6,12 @@ export type RootStackParamList = {
   Home: undefined;
   Add: undefined;
   AsyncStore: undefined;
+  Mmkv: undefined;
+};
+export type User = {
+  id: string;
+  name: string;
+  age: string;
 };
 export interface ButtonProps {
   title: string;

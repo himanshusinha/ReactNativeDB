@@ -22,6 +22,7 @@ target 'ReactNativeDB' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+  pod 'MMKVCore', :modular_headers => true
 
   post_install do |installer|
     react_native_post_install(
